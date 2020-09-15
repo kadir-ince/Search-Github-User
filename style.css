@@ -25,7 +25,32 @@ input {
     font-size: 1rem;
     padding: 1rem;
     margin-bottom: 2rem;
+    min-width: 300px;
+    padding-left: 55px;
 }
+
+.btn {
+    width: 35px;
+    height: 35px;
+    position: absolute;
+    margin-left: 8px;
+    margin-top: 10px;
+    border: none;
+    background: url("https://img.icons8.com/fluent/48/000000/search.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.btn:focus {
+    outline: none;
+}
+
+/* .search-icon {
+    width: 40px;
+    position: absolute;
+    padding-left: 10px;
+    padding-top: 12px;
+} */
 
 input::placeholder {
     color: #bbb;
@@ -43,6 +68,10 @@ input:focus {
     display: flex;
     padding: 3rem;
     max-width: 800px;
+    padding-right: 4rem;
+    margin-right: 5rem;
+    margin-left: 5rem;
+    margin: 0 auto;
 }
 
 .avatar {
@@ -55,6 +84,7 @@ input:focus {
 .user-info {
     color: #eee;
     margin-left: 2rem;
+    min-width: 400px;
 }
 
 .user-info h2 {
@@ -66,7 +96,7 @@ input:focus {
     justify-content: space-between;
     list-style-type: none;
     padding: 0;
-    max-width: 400px;
+    max-width: 350px;
 }
 
 .user-info ul li {
@@ -77,4 +107,26 @@ input:focus {
 .user-info ul li strong {
     font-size: 0.9rem;
     margin-left: 0.3rem;
+}
+
+.user-info p {
+    color: wheat;
+}
+
+.user-info a {
+    color: white;
+    text-decoration: none;
+}
+
+.stat {
+    display: flex;
+    max-width: 100%;
+    margin-top: 100px;
+}
+
+.stat * {
+    margin-right: 4rem;
+    margin-left: 4rem;
+    border-radius: 20px;
+    height: 100%;
 }
