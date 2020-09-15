@@ -8,3 +8,4 @@ Search the Github User <br>
 
 ## What Features Will Be Added To The App
 - [ ] List his/her Repos highest to lowest
+- [ ] Fix Mobile UI (Responsive UI)
