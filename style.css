@@ -60,6 +60,20 @@ input:focus {
     outline: none;
 }
 
+body * {
+    animation: fade 1s;
+    -webkit-animation: fade 1s;
+}
+
+@keyframes fade {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1.2;
+    }
+}
+
 .card {
     background-color: #4c2885;
     background-image: linear-gradient(315deg, #4c2885 0%, #4c11ac 100%);
