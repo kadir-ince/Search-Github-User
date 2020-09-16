@@ -17,6 +17,8 @@ function createUserCard(user) {
 
     const cardHTML = `
     <div class='card'>
+    ${(user.message === "API rate limit exceeded for 95.70.132.74. (But here's the good news: Authenticated requests get a higher rate limit. Check out the documentation for more details.)") ?
+            `
         <div class='img-container'>
             <img class="avatar" src="${user.avatar_url}" alt="${user.name}">
         </div>
@@ -30,9 +32,13 @@ function createUserCard(user) {
                 <a href="https://github.com/${user.login}?tab=repositories" target="_blank"><li>${user.public_repos} <strong>Repos</strong></li></a>
             </ul>
         </div>
+        
+        `
+            : `<div class="right-over"><p>Your Right To Search is Over </p></div>`}
+        
     </div>    
 
-    ${(user.type !== 'Organization') ?
+    ${(user.type !== 'Organization' && user.message === "API rate limit exceeded for 95.70.132.74. (But here's the good news: Authenticated requests get a higher rate limit. Check out the documentation for more details.)") ?
             ` <div class="stat">
         <img class"language_stat" src="https://github-readme-stats.vercel.app/api/top-langs/?username=${user.login}&hide_langs_below=1&hide_border=true&layout=compact&bg_color=315deg,4c11ac,4c2885&text_color=ffffff&title_color=28ffc1"/>  
         <img class"profile_stat" src="https://github-readme-stats.vercel.app/api/?username=${user.login}&show_icons=true&title_color=28ffc1&icon_color=ff4889&text_color=ffffff&bg_color=315deg,4c11ac,4c2885&hide_border=true"/>  
@@ -51,7 +57,3 @@ form.addEventListener("submit", (e) => {
         search.value = ''
     }
 })
-
-"https://github-readme-stats.vercel.app/api/?username=kadir-ince&show_icons=true&title_color=3080ed&icon_color=3080ed&text_color=9f9f9f&bg_color=ffffff,issues&hide_border=true"
-
-"https://github-readme-stats.vercel.app/api/top-langs/?username=kadir-ince&hide_langs_below=1&hide_border=true"
