@@ -1,4 +1,4 @@
-# Distance Calculator (SwiftUI)
+# Search Github User
 Search the Github User <br>
 ⚠️ First-time searched users are loaded with a second delay for status badges <br> <br>
 ![GitHub repo size](https://img.shields.io/github/repo-size/kadir-ince/Search-Github-User)
