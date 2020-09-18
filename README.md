@@ -9,5 +9,8 @@ Search the Github User <br>
 ## What Features Will Be Added To The App
 - [x] Add "Your right to search is over" (because limited API)
 - [ ] Fix UI for the "not found" usernames
-- [ ] List his/her Repos highest to lowest
 - [ ] Fix Mobile UI (Responsive UI)
+- [ ] Move to Vue.js
+- [ ] Create Loading view for delay of the profile status 
+- [ ] List his/her Repos highest to lowest
+
