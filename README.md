@@ -10,7 +10,6 @@ Search the Github User <br>
 - [x] Add "Your right to search is over" (because limited API)
 - [ ] Fix UI for the "not found" usernames
 - [ ] Fix Mobile UI (Responsive UI)
-- [ ] Move to Vue.js
 - [ ] Create Loading view for delay of the profile status 
 - [ ] List his/her Repos highest to lowest
 
