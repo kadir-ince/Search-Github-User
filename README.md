@@ -1,5 +1,5 @@
 # Search Github User
-Search the Github User <br>
+Search the Github user with his/her status cards (most used languages - total stars, PRs, commits etc.) <br>
 ⚠️ First-time searched users are loaded with a second delay for status badges <br> <br>
 ![GitHub repo size](https://img.shields.io/github/repo-size/kadir-ince/Search-Github-User)
 
