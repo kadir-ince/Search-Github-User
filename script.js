@@ -30,7 +30,7 @@ function createUserCard(user) {
     
             <ul class='info'>
                  <a href="https://github.com/${user.login}?tab=followers" target="_blank"><li>${(user.type !== 'Organization') ? user.followers + '<strong> Followers </strong>' : "Organizition"}</li></a>
-                 <a href="https://github.com/${user.login}?tab=following" target="_blank"><li>${(user.type !== 'Organization') ? user.followers + '<strong> Followers </strong>' : "Organizition"}</li></a>
+                 <a href="https://github.com/${user.login}?tab=following" target="_blank"><li>${(user.type !== 'Organization') ? user.following + '<strong> Following </strong>' : "Organizition"}</li></a>
                 <a href="https://github.com/${user.login}?tab=repositories" target="_blank"><li>${user.public_repos} <strong>Repos</strong></li></a>
             </ul>` : `<div class="right-over"><p>User is Not Found </p></div>`
         }
